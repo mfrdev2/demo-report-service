@@ -1,0 +1,1 @@
+This repo aims to contain all the reusable components for BCC project
