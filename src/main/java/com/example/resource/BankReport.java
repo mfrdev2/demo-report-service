@@ -31,24 +31,30 @@ public class BankReport {
                     .getAbsolutePath();
 
 
-
             List<ReportBean> lit = new ArrayList<>();
 
             lit.add(ReportBean.builder()
+                    .officeName("Business Automation Ltd")
+                            .officeAddress("Mirpur DHOS, Dhaka - 1216")
                     .reportName("Bank Report")
-                    .logoUrl(null)
+                    .logoUrl("https://ebs.oss.net.bd/home/images/site-logo.png")
                     .nameBnAndAmounts(Arrays.asList(InfoBean.builder()
-                            .nameBn("FRabbi")
-                            .creditAmount(BigDecimal.valueOf(5464))
-                            .debitAmount(BigDecimal.valueOf(465456))
-                            .build(),
+                                    .nameBn("FRabbi")
+                                    .creditAmount(BigDecimal.valueOf(5464))
+                                    .debitAmount(BigDecimal.valueOf(465456))
+                                    .build(),
                             InfoBean.builder()
-                            .creditAmount(BigDecimal.valueOf(5454))
-                            .nameBn("FRabbi")
-                            .debitAmount(BigDecimal.valueOf(64564))
-                            .build()))
+                                    .creditAmount(BigDecimal.valueOf(5454))
+                                    .nameBn("Tanvir")
+                                    .debitAmount(BigDecimal.valueOf(64564))
+                                    .build(),
+                            InfoBean.builder()
+                                    .creditAmount(BigDecimal.valueOf(5454))
+                                    .nameBn("ডালাস")
+                                    .debitAmount(BigDecimal.valueOf(64564))
+                                    .build()
+                    ))
                     .build());
-
 
 
             JRBeanCollectionDataSource chartDataSource =
@@ -73,7 +79,7 @@ public class BankReport {
             return new ResponseEntity<byte[]>(byteArray, headers, HttpStatus.OK);
 
         } catch (Exception e) {
-            System.out.println("Exception while creating report:: "+e.getMessage());
+            System.out.println("Exception while creating report:: " + e.getMessage());
             return new ResponseEntity<byte[]>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
