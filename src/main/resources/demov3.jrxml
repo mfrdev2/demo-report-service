@@ -168,19 +168,17 @@
 									<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
 									<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
 									<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+									<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
 								</reportElement>
 								<jr:table>
 									<datasetRun subDataset="Empty Dataset1" uuid="c356026e-fc3e-4357-a664-4538cb455b72">
 										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{innerTableData})]]></dataSourceExpression>
 									</datasetRun>
-									<jr:column width="40" uuid="e5765425-7217-4e3d-ab14-942879443d8d">
-										<jr:tableHeader style="Table 1_TH" height="30"/>
-										<jr:tableFooter style="Table 1_TH" height="30"/>
-										<jr:columnHeader style="Table 1_CH" height="30"/>
-										<jr:columnFooter style="Table 1_CH" height="30"/>
+									<jr:column width="231" uuid="e5765425-7217-4e3d-ab14-942879443d8d">
+										<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
 										<jr:detailCell style="Table 1_TD" height="30">
 											<textField>
-												<reportElement x="0" y="0" width="40" height="30" uuid="859ba4e5-9493-41cf-b690-03345bdacca1"/>
+												<reportElement x="0" y="0" width="231" height="30" uuid="859ba4e5-9493-41cf-b690-03345bdacca1"/>
 												<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
 											</textField>
 										</jr:detailCell>

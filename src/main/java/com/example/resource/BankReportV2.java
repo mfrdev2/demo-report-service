@@ -30,13 +30,22 @@ public class BankReportV2 {
 
             List<ReportBeanV2> lit = new ArrayList<>();
             List<InfoBeanV2> list = Arrays.asList(
-                    new InfoBeanV2("FR",
+                    new InfoBeanV2("FRabbi",
                             BigDecimal.valueOf(6546465),
                             Arrays.asList(
                                     new InnerTableData("xx"),
+                                    new InnerTableData("yy"),
+                                    new InnerTableData("xy"),
+                                    new InnerTableData("uz")
+                            )
+                    ),
+                    new InfoBeanV2("Rabbi",
+                            BigDecimal.valueOf(6546465),
+                            Arrays.asList(
                                     new InnerTableData("xx"),
-                                    new InnerTableData("xx"),
-                                    new InnerTableData("xx")
+                                    new InnerTableData("yy"),
+                                    new InnerTableData("xy"),
+                                    new InnerTableData("uz")
                             )
                     )
 
