@@ -1,9 +1,7 @@
 package com.example.resource;
 
 import com.example.jasperreport.service.JasperReportService;
-import com.example.pojo.InfoBean;
-import com.example.pojo.ReportBean;
-import com.example.pojo.Student;
+import com.example.pojo.*;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import org.springframework.http.HttpHeaders;
@@ -26,33 +24,32 @@ public class BankReportV2 {
     public ResponseEntity<byte[]> getReport() {
 
         try {
-            String filePath = ResourceUtils.getFile("classpath:demov2.jrxml")
+            String filePath = ResourceUtils.getFile("classpath:demov3.jrxml")
                     .getAbsolutePath();
 
 
-            List<ReportBean> lit = new ArrayList<>();
+            List<ReportBeanV2> lit = new ArrayList<>();
+            List<InfoBeanV2> list = Arrays.asList(
+                    new InfoBeanV2("FR",
+                            BigDecimal.valueOf(6546465),
+                            Arrays.asList(
+                                    new InnerTableData("xx"),
+                                    new InnerTableData("xx"),
+                                    new InnerTableData("xx"),
+                                    new InnerTableData("xx")
+                            )
+                    )
 
-            lit.add(ReportBean.builder()
+            );
+
+            lit.add(ReportBeanV2.builder()
                     .officeName("Business Automation Ltd")
-                            .officeAddress("Mirpur DHOS, Dhaka - 1216")
+                    .officeAddress("Mirpur DHOS, Dhaka - 1216")
                     .reportName("Bank Report")
                     .logoUrl("https://ebs.oss.net.bd/home/images/site-logo.png")
-                    .nameBnAndAmounts(Arrays.asList(InfoBean.builder()
-                                    .nameBn("FRabbi")
-                                    .creditAmount(BigDecimal.valueOf(5464))
-                                    .debitAmount(BigDecimal.valueOf(465456))
-                                    .build(),
-                            InfoBean.builder()
-                                    .creditAmount(BigDecimal.valueOf(5454))
-                                    .nameBn("Tanvir")
-                                    .debitAmount(BigDecimal.valueOf(64564))
-                                    .build(),
-                            InfoBean.builder()
-                                    .creditAmount(BigDecimal.valueOf(5454))
-                                    .nameBn("ডালাস")
-                                    .debitAmount(BigDecimal.valueOf(64564))
-                                    .build()
-                    ))
+
+                    .nameBnAndAmounts(list)
+
                     .build());
 
 
