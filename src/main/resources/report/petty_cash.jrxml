@@ -283,7 +283,6 @@
 					<jr:column width="50" uuid="6087fc0e-4e7e-473f-adad-a502182ae8e2">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="50" height="30" uuid="fe2e3113-519e-4eb7-b28f-f6d659f0e308"/>
@@ -297,7 +296,6 @@
 					<jr:column width="60" uuid="eb865c20-6274-4cb7-9ea8-8ba678a32caa">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="60" height="30" uuid="58b952e2-d79f-4de6-8262-dca044560d94"/>
@@ -311,7 +309,6 @@
 					<jr:column width="60" uuid="2f7489f0-128f-4a18-a11c-d2eb2b0828c8">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="60" height="30" uuid="c4fd6dd3-cbad-4f6d-9834-1916e0d04d6d"/>
@@ -325,7 +322,6 @@
 					<jr:column width="60" uuid="b70e5ce3-515b-4aad-868b-8d7a0717ee91">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="60" height="30" uuid="94c6c26e-37a6-40cf-b2e9-7b6c6ebb7247"/>
@@ -339,7 +335,6 @@
 					<jr:column width="80" uuid="f8be0369-df3a-425b-a991-d135be65352b">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="80" height="30" uuid="98c89518-ed2c-4241-811d-131aaa7760c9"/>
@@ -353,7 +348,6 @@
 					<jr:column width="100" uuid="96d9536b-946e-4620-a36f-16d50aecfb30">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="100" height="30" uuid="700a572d-d575-4ca2-9269-ebd490f3fd36"/>
@@ -367,7 +361,6 @@
 					<jr:column width="100" uuid="9f591f5c-41cf-447c-ba92-2995e2ab5304">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="100" height="30" uuid="70059bdc-5aa4-4de5-8e83-49f05bf36005"/>
@@ -381,7 +374,6 @@
 					<jr:column width="60" uuid="096b2546-9fab-4ac6-b4b9-302790831336">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="60" height="30" uuid="9f45f3c9-4a00-4ef9-b543-d0aff0edaeca"/>
@@ -395,7 +387,6 @@
 					<jr:column width="60" uuid="efa5a1f7-45f8-4138-8531-8eef73127250">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="60" height="30" uuid="fe98653c-f32e-4146-a293-67c804147caa"/>
@@ -409,7 +400,6 @@
 					<jr:column width="60" uuid="f8fb2313-5d4e-460b-b225-a2a89771974e">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="60" height="30" uuid="36d95d86-d59c-4f06-a357-a9995109c7f1"/>
@@ -423,7 +413,6 @@
 					<jr:column width="50" uuid="cd798961-212e-4c8d-b068-f0648820a009">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="50" height="30" uuid="32f9ad44-f754-402d-b7b2-b170165a1583"/>
@@ -437,7 +426,6 @@
 					<jr:column width="62" uuid="737976e7-3684-48ab-bbf9-1efd90d318e1">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
 						<jr:tableFooter style="Table_TH" height="30" rowSpan="1"/>
-						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="62" height="30" uuid="8c519950-65ec-4b34-b956-654ceb51e42e"/>

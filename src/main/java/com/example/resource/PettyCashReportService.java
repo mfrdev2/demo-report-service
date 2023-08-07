@@ -28,68 +28,7 @@ public class PettyCashReportService {
                     .getAbsolutePath();
 
 
-            List<PettyCashReport> list = Arrays.asList(
-                    new PettyCashReport(
-                            Arrays.asList(
-                                    PettyCashBean.builder()
-                                            .voucherNo("#VS1")
-                                            .date("08-02-2023")
-                                            .pcPayment("25000")
-                                            .pcReceipt("546431")
-                                            .nameOfPayee("FRabbi")
-                                            .teamName("BT")
-                                            .modeOfPayment("Mood")
-                                            .modeOfPaymentRef("Cash")
-                                            .bankPayment("326546")
-                                            .bankReceipt("4154")
-                                            .financialCode("1245")
-                                            .description("Hi I am  description about this raw")
-                                            .build(),
-                                    PettyCashBean.builder()
-                                            .voucherNo("#VS1")
-                                            .date("08-02-2023")
-                                            .pcPayment("25000")
-                                            .pcReceipt("546431")
-                                            .nameOfPayee("FRabbi")
-                                            .teamName("BT")
-                                            .modeOfPayment("Mood")
-                                            .modeOfPaymentRef("Cash")
-                                            .bankPayment("326546")
-                                            .bankReceipt("4154")
-                                            .financialCode("1245")
-                                            .description("Hi I am  description about this raw")
-                                            .build(),
-                                    PettyCashBean.builder()
-                                            .voucherNo("#VS1")
-                                            .date("08-02-2023")
-                                            .pcPayment("25000")
-                                            .pcReceipt("546431")
-                                            .nameOfPayee("FRabbi")
-                                            .teamName("BT")
-                                            .modeOfPayment("Mood")
-                                            .modeOfPaymentRef("Cash")
-                                            .bankPayment("326546")
-                                            .bankReceipt("4154")
-                                            .financialCode("1245")
-                                            .description("Hi I am  description about this raw")
-                                            .build(),
-                                    PettyCashBean.builder()
-                                            .voucherNo("#VS1")
-                                            .date("08-02-2023")
-                                            .pcPayment("25000")
-                                            .pcReceipt("546431")
-                                            .nameOfPayee("FRabbi")
-                                            .teamName("BT")
-                                            .modeOfPayment("Mood")
-                                            .modeOfPaymentRef("Cash")
-                                            .bankPayment("326546")
-                                            .bankReceipt("4154")
-                                            .financialCode("1245")
-                                            .description("Hi I am  description about this raw")
-                                            .build()
-                            )
-                    )
-            );
+            List<PettyCashReport> list = getPettyCashReports();
 
 
             JRBeanCollectionDataSource dataSource =
@@ -118,6 +57,71 @@ public class PettyCashReportService {
             return new ResponseEntity<byte[]>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
+    }
+
+    private static List<PettyCashReport> getPettyCashReports() {
+        return Arrays.asList(
+                new PettyCashReport(
+                        Arrays.asList(
+                                PettyCashBean.builder()
+                                        .voucherNo("#VS1")
+                                        .date("08-02-2023")
+                                        .pcPayment("25000")
+                                        .pcReceipt("546431")
+                                        .nameOfPayee("FRabbi")
+                                        .teamName("BT")
+                                        .modeOfPayment("Mood")
+                                        .modeOfPaymentRef("Cash")
+                                        .bankPayment("326546")
+                                        .bankReceipt("4154")
+                                        .financialCode("1245")
+                                        .description("Hi I am  description about this raw")
+                                        .build(),
+                                PettyCashBean.builder()
+                                        .voucherNo("#VS1")
+                                        .date("08-02-2023")
+                                        .pcPayment("25000")
+                                        .pcReceipt("546431")
+                                        .nameOfPayee("FRabbi")
+                                        .teamName("BT")
+                                        .modeOfPayment("Mood")
+                                        .modeOfPaymentRef("Cash")
+                                        .bankPayment("326546")
+                                        .bankReceipt("4154")
+                                        .financialCode("1245")
+                                        .description("Hi I am  description about this raw")
+                                        .build(),
+                                PettyCashBean.builder()
+                                        .voucherNo("#VS1")
+                                        .date("08-02-2023")
+                                        .pcPayment("25000")
+                                        .pcReceipt("546431")
+                                        .nameOfPayee("FRabbi")
+                                        .teamName("BT")
+                                        .modeOfPayment("Mood")
+                                        .modeOfPaymentRef("Cash")
+                                        .bankPayment("326546")
+                                        .bankReceipt("4154")
+                                        .financialCode("1245")
+                                        .description("Hi I am  description about this raw")
+                                        .build(),
+                                PettyCashBean.builder()
+                                        .voucherNo("#VS1")
+                                        .date("08-02-2023")
+                                        .pcPayment("25000")
+                                        .pcReceipt("546431")
+                                        .nameOfPayee("FRabbi")
+                                        .teamName("BT")
+                                        .modeOfPayment("Mood")
+                                        .modeOfPaymentRef("Cash")
+                                        .bankPayment("326546")
+                                        .bankReceipt("4154")
+                                        .financialCode("1245")
+                                        .description("Hi I am  description about this raw")
+                                        .build()
+                        )
+                )
+        );
     }
 
     public static JasperReport getSubReport() {
