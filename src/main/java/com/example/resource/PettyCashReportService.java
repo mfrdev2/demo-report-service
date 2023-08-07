@@ -21,10 +21,49 @@ import java.util.*;
 public class PettyCashReportService {
 
     @GetMapping("petty-cash")
-    public ResponseEntity<byte[]> getReport() {
+    public ResponseEntity<byte[]> getReportPettyCash() {
 
         try {
             String filePath = ResourceUtils.getFile("classpath:report/petty_cash.jrxml")
+                    .getAbsolutePath();
+
+
+            List<PettyCashReport> list = getPettyCashReports();
+
+
+            JRBeanCollectionDataSource dataSource =
+                    new JRBeanCollectionDataSource(list);
+
+            Map<String, Object> parameters = new HashMap<>();
+            parameters.put("name", "FRabbi");
+            //	parameters.put("tableData", dataSource);
+
+            JasperReport report = JasperCompileManager.compileReport(filePath);
+
+            JasperPrint print =
+                    JasperFillManager.
+                            fillReport(report, parameters, dataSource);
+
+            byte[] byteArray = JasperExportManager.exportReportToPdf(print);
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_PDF);
+            headers.setContentDispositionFormData("filename", "petty-cash-report.pdf");
+
+            return new ResponseEntity<byte[]>(byteArray, headers, HttpStatus.OK);
+
+        } catch (Exception e) {
+            System.out.println("Exception while creating report:: " + e.getMessage());
+            return new ResponseEntity<byte[]>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+    }
+
+    @GetMapping("non-petty-cash")
+    public ResponseEntity<byte[]> getReportWithoutPettyCash() {
+
+        try {
+            String filePath = ResourceUtils.getFile("classpath:report/non_petty_cash.jrxml")
                     .getAbsolutePath();
 
 
