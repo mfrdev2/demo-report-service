@@ -5,15 +5,21 @@ import com.example.model.PettyCashReport;
 import com.example.pojo.Student;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import net.sf.jasperreports.engine.export.JRXlsExporter;
+import net.sf.jasperreports.engine.export.ooxml.JRDocxExporter;
+import net.sf.jasperreports.engine.export.ooxml.JRXlsxExporter;
+import net.sf.jasperreports.export.*;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ResourceUtils;
+import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.*;
 import java.util.*;
 
 @RestController
@@ -40,15 +46,17 @@ public class PettyCashReportService {
 
             JasperReport report = JasperCompileManager.compileReport(filePath);
 
-            JasperPrint print =
-                    JasperFillManager.
+            JasperPrint print = JasperFillManager.
                             fillReport(report, parameters, dataSource);
+
+
 
             byte[] byteArray = JasperExportManager.exportReportToPdf(print);
 
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_PDF);
             headers.setContentDispositionFormData("filename", "petty-cash-report.pdf");
+            export(print,byteArray);
 
             return new ResponseEntity<byte[]>(byteArray, headers, HttpStatus.OK);
 
@@ -58,6 +66,40 @@ public class PettyCashReportService {
         }
 
     }
+
+    private static void export(JasperPrint jasperPrint,byte[] data) throws JRException {
+
+
+            try {
+                    /**
+                     * 1- export to PDF
+                     */
+                    JasperExportManager.exportReportToPdfFile(jasperPrint,
+                            "sample_report.pdf");
+
+                    /**
+                     * 2- export to HTML
+                     */
+                    JasperExportManager.exportReportToHtmlFile(jasperPrint,
+                            "sample_report.html");
+
+                    /**
+                     * 3- export to Excel sheet
+                     */
+                FileOutputStream fout1=new FileOutputStream("simple.xls");
+                FileOutputStream fout2=new FileOutputStream("simple.docx");
+                ByteArrayOutputStream outputStream = new ByteArrayOutputStream(data.length);
+                outputStream.write(data);
+                outputStream.writeTo(fout2);
+                outputStream.writeTo(fout1);
+                outputStream.flush();
+            } catch (JRException | IOException e) {
+                e.printStackTrace();
+            }
+
+    }
+
+
 
     @GetMapping("non-petty-cash")
     public ResponseEntity<byte[]> getReportWithoutPettyCash() {
