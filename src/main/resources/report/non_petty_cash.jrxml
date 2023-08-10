@@ -99,55 +99,31 @@
 					<pen lineWidth="0.0"/>
 				</box>
 				<rectangle>
-					<reportElement x="0" y="0" width="50" height="72" uuid="7bf803ad-fb91-4933-99f5-43f9dc7d5d45"/>
-				</rectangle>
-				<rectangle>
-					<reportElement x="50" y="0" width="60" height="72" uuid="9bd8b995-15da-46b6-9966-1fd8610243c9"/>
-				</rectangle>
-				<rectangle>
-					<reportElement x="110" y="0" width="100" height="72" uuid="ae1e6990-e648-4b56-b767-d0dd674c237f"/>
-				</rectangle>
-				<rectangle>
-					<reportElement x="210" y="0" width="100" height="72" uuid="152a2992-3c88-4408-8111-7e2d9b16edd3"/>
-				</rectangle>
-				<rectangle>
-					<reportElement x="310" y="0" width="130" height="72" uuid="f9b80668-73d7-4d48-af6c-96b2fd2c4306"/>
-				</rectangle>
-				<rectangle>
-					<reportElement x="440" y="0" width="90" height="72" uuid="79260378-92af-4a9d-8cf8-16536cadea6f"/>
-				</rectangle>
-				<rectangle>
-					<reportElement x="530" y="0" width="80" height="72" uuid="4117dbca-e3be-4061-a703-2278cec9de81"/>
-				</rectangle>
-				<rectangle>
-					<reportElement x="610" y="0" width="130" height="72" uuid="3afe4052-accb-4c40-a2b6-6bb8c9537e48"/>
-				</rectangle>
-				<rectangle>
-					<reportElement x="740" y="0" width="62" height="72" uuid="ab31e47d-122d-4798-8870-8f7ee443d3a9"/>
+					<reportElement x="0" y="0" width="802" height="72" uuid="ab31e47d-122d-4798-8870-8f7ee443d3a9"/>
 				</rectangle>
 				<staticText>
-					<reportElement x="110" y="37" width="100" height="33" uuid="405ce848-ddef-49f9-8338-1f89e73bec73"/>
+					<reportElement x="110" y="38" width="100" height="32" uuid="405ce848-ddef-49f9-8338-1f89e73bec73"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
 					</textElement>
 					<text><![CDATA[Name of Payee]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="210" y="37" width="100" height="36" uuid="b5b32175-ac8c-4e60-96c2-3f1973a2a3ff"/>
+					<reportElement x="210" y="38" width="100" height="33" uuid="b5b32175-ac8c-4e60-96c2-3f1973a2a3ff"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
 					</textElement>
 					<text><![CDATA[Team Name]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="310" y="38" width="130" height="33" uuid="2c48f4f2-5ea3-4086-922b-b590be0c99ee"/>
+					<reportElement x="310" y="37" width="130" height="33" uuid="2c48f4f2-5ea3-4086-922b-b590be0c99ee"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
 					</textElement>
 					<text><![CDATA[Description]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="440" y="0" width="90" height="72" uuid="ad2d866c-e250-4c93-959f-a28f95155ec7"/>
+					<reportElement x="440" y="2" width="90" height="68" uuid="ad2d866c-e250-4c93-959f-a28f95155ec7"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -160,7 +136,7 @@
 					<text><![CDATA[MODE OF PAYMENT]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="530" y="0" width="80" height="72" uuid="fabc2a33-3baa-427f-a327-e79cf2fa83ee"/>
+					<reportElement x="530" y="0" width="80" height="70" uuid="fabc2a33-3baa-427f-a327-e79cf2fa83ee"/>
 					<box>
 						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -173,12 +149,12 @@
 					<text><![CDATA[MODE OF PAYMENT REF./CASH/BANK (CHEQUE NO.)]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="610" y="0" width="130" height="40" uuid="4f3a8162-1632-4a14-8e07-434b88b3bc8a"/>
+					<reportElement x="610" y="1" width="130" height="36" uuid="4f3a8162-1632-4a14-8e07-434b88b3bc8a"/>
 					<box>
-						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
@@ -186,33 +162,33 @@
 					<text><![CDATA[BANK]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="740" y="40" width="62" height="30" uuid="07eb3e9e-7972-4848-aefe-ba49105a0836"/>
+					<reportElement x="740" y="38" width="62" height="34" uuid="07eb3e9e-7972-4848-aefe-ba49105a0836"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
 					</textElement>
 					<text><![CDATA[Financial Code ]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="0" y="37" width="50" height="36" uuid="eab424bc-3db8-4e08-a1cd-7a33b2ab6fdf"/>
+					<reportElement x="0" y="37" width="50" height="34" uuid="eab424bc-3db8-4e08-a1cd-7a33b2ab6fdf"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
 					</textElement>
 					<text><![CDATA[Voucher No.]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="50" y="37" width="60" height="37" uuid="a0f2a6a3-90d7-4010-94f5-23cfb81975f9"/>
+					<reportElement x="50" y="37" width="60" height="33" uuid="a0f2a6a3-90d7-4010-94f5-23cfb81975f9"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
 					</textElement>
 					<text><![CDATA[DATE]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="610" y="40" width="70" height="32" uuid="bed3f1ec-62d8-40d9-9f7e-44cf49ee1d69"/>
+					<reportElement x="611" y="38" width="70" height="33" uuid="bed3f1ec-62d8-40d9-9f7e-44cf49ee1d69"/>
 					<box>
-						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
-						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					</box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
@@ -220,19 +196,69 @@
 					<text><![CDATA[Receipt (DR.)]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="680" y="40" width="60" height="30" uuid="a70af0c2-379d-4734-8a1e-9ff4dca19c80"/>
+					<reportElement x="680" y="39" width="60" height="31" uuid="a70af0c2-379d-4734-8a1e-9ff4dca19c80"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="SolaimanLipi"/>
 					</textElement>
 					<text><![CDATA[Payment (CR.)]]></text>
 				</staticText>
+				<line>
+					<reportElement x="50" y="0" width="1" height="70" uuid="1af2dae0-feba-4106-a359-fcdb0a13f518">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="110" y="0" width="1" height="70" uuid="00cbf189-22dc-4f71-b8da-19ec13d9b83e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="210" y="0" width="1" height="70" uuid="f4295210-e26c-45cd-960d-656517af106a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="310" y="1" width="1" height="70" uuid="2bf8c8fc-fb28-42a2-81a1-93f893bfbe34">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="440" y="0" width="1" height="70" uuid="0dd2594f-ace6-4ca0-b808-62a6cbb24b93">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="530" y="0" width="1" height="70" uuid="1aa9c66d-0b8a-4fa7-a41c-d982c65d8d54">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="610" y="1" width="1" height="70" uuid="55ffd49a-f910-4e1b-8359-53d6402978ac">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="740" y="0" width="1" height="70" uuid="8c864046-72b6-446d-b366-710161d180c1">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="611" y="38" width="129" height="1" uuid="fff8dc19-4d25-43b2-9bf6-3edbd5426b51">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="680" y="39" width="1" height="33" uuid="8061545c-be2f-4bfe-aa27-f4ef826f3e95">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</line>
 			</frame>
 		</band>
 	</title>
 	<detail>
 		<band height="240" splitType="Stretch">
 			<componentElement>
-				<reportElement x="0" y="-1" width="802" height="241" uuid="28515405-3174-49ad-82b6-b4f5a806b5ce">
+				<reportElement x="0" y="-1" width="802" height="101" uuid="28515405-3174-49ad-82b6-b4f5a806b5ce">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
